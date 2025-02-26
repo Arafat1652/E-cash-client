@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="sendmoney" x="0" y="0" version="1.1" viewBox="0 0 52 52">
+  <g fill="none" stroke="#4285f4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" class="colorStroke000000 svgStroke">
+    <path d="M2 20.396h48V50H2z" fill="#34a853" class="color000000 svgShape"></path>
+    <path d="M50 40.884A9.116 9.116 0 0 0 40.884 50M40.884 20.396A9.116 9.116 0 0 0 50 29.512M2 29.512a9.116 9.116 0 0 0 9.116-9.116M11.116 50A9.116 9.116 0 0 0 2 40.884" fill="#34a853" class="color000000 svgShape"></path>
+  </g>
+  <g fill="none" stroke="#4285f4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" class="colorStroke000000 svgStroke">
+    <path d="M28.77 32.427c0-1.529-1.24-2.76-2.77-2.76s-2.77 1.231-2.77 2.76 1.24 2.77 2.77 2.77M23.23 37.969c0 1.517 1.24 2.759 2.77 2.759s2.77-1.242 2.77-2.76c0-1.528-1.24-2.77-2.77-2.77M26 40.728v1.403M26 28.265v1.403" fill="#34a853" class="color000000 svgShape"></path>
+  </g>
+  <circle cx="26" cy="35.198" r="10.524" fill="none" stroke="#4285f4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" class="colorStroke000000 svgStroke"></circle>
+  <g fill="none" stroke="#4285f4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" class="colorStroke000000 svgStroke">
+    <path d="M26 2.002v13.396M21.66 6.35 26 2l4.34 4.35" fill="#34a853" class="color000000 svgShape"></path>
+  </g>
+</svg>
