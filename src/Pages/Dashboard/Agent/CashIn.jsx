@@ -50,7 +50,7 @@ const CashIn = () => {
         <div className='mt-20'>
         <div>
    <div className="w-full max-w-md my-10 p-8 space-y-3 rounded-xl mx-auto bg-base-200">
-     <h1 className="text-2xl font-bold text-center">Cash Out</h1>
+     <h1 className="text-2xl font-bold text-center">Cash In</h1>
      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
          <div className="space-y-1 text-sm">
              <label htmlFor="username" className="block">CashIn Number</label>

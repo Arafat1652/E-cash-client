@@ -14,7 +14,7 @@ const DashboardLayout = () => {
 
             <div className="fixed bg-[#ffedd5] text-blue-800 px-10 py-1 z-10 w-[85%] right-0 mb-40">
       <div className="flex items-center justify-between py-2 text-5x1">
-        <div className="font-bold text-blue-900 text-xl">{user.accountType.toUpperCase()} <span className="text-orange-600">Panel</span></div>
+        <div className="font-bold text-blue-900 text-xl">{user.accountType.toUpperCase()} <span className="text-orange-600">PANEL</span></div>
         <div className="flex items-center text-gray-500">
           <span className="material-icons-outlined p-2" ><FaSearch /></span>
           <span className="material-icons-outlined p-2"><div className="relative w-16 bg-teal-100 p-2 rounded-lg">
@@ -27,7 +27,34 @@ const DashboardLayout = () => {
         1
     </div>
 </div></span>
-          <div className="bg-center bg-cover bg-no-repeat rounded-full inline-block h-12 w-12 ml-2" style={{backgroundImage: `url(${user.image})`}}></div>
+          {/* <div className="bg-center bg-cover bg-no-repeat rounded-full inline-block h-12 w-12 ml-2" style={{backgroundImage: `url(${user.image})`}}></div> */}
+
+          {/*  */}
+          <div className="relative inline-block text-left">
+    <div className="group">
+        <button type="button"
+            className="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium text-white  focus:outline-none">
+           <div className="bg-center bg-cover bg-no-repeat rounded-full inline-block h-12 w-12 ml-2" style={{backgroundImage: `url(${user.image})`}}></div>
+            {/* <!-- Dropdown arrow --> */}
+            <svg className="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+            </svg>
+        </button>
+
+        {/* <!-- Dropdown menu --> */}
+        <div
+            className="absolute right-1 w-50 mt-1 origin-top-left bg-emerald-100 divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+            <div className="py-1">
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{user.name}</a>
+                <hr />
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{user.email}</a>
+                <hr />
+                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{user.mobile}</a>
+            </div>
+        </div>
+    </div>
+</div>
+          {/*  */}
         </div>
     </div>
   </div>

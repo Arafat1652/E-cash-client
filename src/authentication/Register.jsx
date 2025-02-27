@@ -29,7 +29,8 @@ const Register = () => {
         nid: nidNumber,
         accountType,
         pin,
-        balance: 40
+        balance: 40,
+        status: 'Created'
       };
       console.log(userInfo);
       axios.post(`${import.meta.env.VITE_API_URL}/user`, userInfo)
@@ -38,7 +39,7 @@ const Register = () => {
         if (res.data.insertedId) {
           toast.success(res.data.message || "Registration successful!"); 
           // reset(); // Uncomment this if you have a form reset function
-          // navigate("/"); // Uncomment this if you want to navigate to another page
+          navigate("/dashboard"); // Uncomment this if you want to navigate to another page
           localStorage.setItem("userData", JSON.stringify(userInfo));
           localStorage.setItem("isLoggedIn", "true");
         }else{

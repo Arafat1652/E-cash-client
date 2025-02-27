@@ -14,7 +14,7 @@ const AgentMenu = () => {
         />
             <MenuItem
           icon={MdVerified}
-          label='Verify Request'
+          label='Agent Request'
           address='verifyRequest'
         />
             <MenuItem
