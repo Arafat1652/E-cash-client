@@ -1,6 +1,7 @@
 
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 
 
@@ -11,9 +12,7 @@ const PrivateRoute = ({children}) => {
 
 
     if(!user){
-        return <div className="text-center">
-        <span className="loading loading-spinner loading-lg text-error mt-24"></span>
-        </div>
+        return <LoadingSpinner/>
     }
     if(user){
         return children

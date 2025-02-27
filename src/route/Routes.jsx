@@ -52,7 +52,7 @@ import AgentRoute from "./AgentRoute";
         },
         {
           path:'transaction',
-          element: <PrivateRoute><AdminRoute><Transaction/></AdminRoute></PrivateRoute>
+          element: <PrivateRoute><Transaction/></PrivateRoute>
         },
         {
           path: 'manage-users',

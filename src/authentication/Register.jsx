@@ -33,6 +33,13 @@ const Register = () => {
         status: 'Created'
       };
       console.log(userInfo);
+
+      if (!/^\d{5}$/.test(pin)) {
+        return toast.error('PIN must be exactly 5 digits');
+      
+      }
+      
+
       axios.post(`${import.meta.env.VITE_API_URL}/user`, userInfo)
       .then((res) => {
         console.log(res);

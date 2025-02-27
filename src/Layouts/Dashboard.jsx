@@ -1,10 +1,11 @@
 
+import LoadingSpinner from "../components/LoadingSpinner";
 import useAuth from "../Hooks/useAuth";
 
 const Dashboard = () => {
   const {user} = useAuth() 
   console.log('useauthheree',user);
-  if(!user) return <p>loading....</p>
+  if(!user) return <LoadingSpinner/>
 
   return (
     <div>

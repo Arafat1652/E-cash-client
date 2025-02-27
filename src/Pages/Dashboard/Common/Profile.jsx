@@ -3,6 +3,7 @@ import useAuth from "../../../Hooks/useAuth";
 import { useEffect, useState } from "react";
 import { SiNamecheap } from "react-icons/si";
 import { Link } from "react-router-dom";
+import LoadingSpinner from "../../../components/LoadingSpinner";
 
 const Profile = () => {
   const { user } = useAuth();
@@ -26,7 +27,7 @@ const Profile = () => {
     }
   }, [user]);
 
-  if (!user) return <p>loading ...</p>;
+  if (!user) return <LoadingSpinner/>;
   return (
     <div>
       <div className="flex flex-col lg:flex-row gap-4 mt-30">

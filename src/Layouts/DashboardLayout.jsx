@@ -4,10 +4,11 @@ import Sidebar from '../components/DashBoard/Sidebar';
 import Dashboard from './Dashboard';
 import { FaSearch } from 'react-icons/fa';
 import useAuth from '../Hooks/useAuth';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const DashboardLayout = () => {
     const {user} = useAuth()
-    if(!user) return <p>loading....</p>
+    if(!user) return <LoadingSpinner/>
     return (
         <div className="md:flex min-h-screen relative">
             <div className=''>
@@ -16,7 +17,6 @@ const DashboardLayout = () => {
       <div className="flex items-center justify-between py-2 text-5x1">
         <div className="font-bold text-blue-900 text-xl">{user.accountType.toUpperCase()} <span className="text-orange-600">PANEL</span></div>
         <div className="flex items-center text-gray-500">
-          <span className="material-icons-outlined p-2" ><FaSearch /></span>
           <span className="material-icons-outlined p-2"><div className="relative w-16 bg-teal-100 p-2 rounded-lg">
     <svg className="w-8 h-8 text-teal-600 animate-wiggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"

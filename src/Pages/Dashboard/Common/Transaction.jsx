@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import useAuth from "../../../Hooks/useAuth";
+import LoadingSpinner from "../../../components/LoadingSpinner";
 
 const Transaction = () => {
     const { user } = useAuth();
@@ -24,7 +25,7 @@ const Transaction = () => {
         fetchTransactions();
     }, [user?.mobile]);  // Optional chaining to prevent errors
 
-    if (!user) return <p>Loading...</p>;
+    if (!user) return <LoadingSpinner/>;
     if (loading) return <p>Fetching transactions...</p>;
 
     return (
